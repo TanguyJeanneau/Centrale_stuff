@@ -1,0 +1,18 @@
+# Adrien HANS et Tanguy JEANNEAU
+# Tp Jeu de l'oie : 
+
+
+## Correction Q1 : 
+Algorithme de la méthode play de la classe Game : 
+TQ aucun joueur sur la case finale 
+    joueur <- joueur suivant
+    Si la cellule peut être quittée,alors   
+        dé <- joueur joue
+        arrivée <- trouve_la_cellule(dé, départ)
+        Si arrivée est occupée, alors
+            déplace l'occupant dans départ
+        fin si
+
+        Déplace joueur dans arrivée
+    fin si 
+fin TQ 
